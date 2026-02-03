@@ -1,0 +1,26 @@
+/* 전역 스타일: 흰색 여백 절대 삭제 */
+:root {
+  --main-bg: #000300;
+  --point-mint: #00df9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body와 html에 배경색 강제 적용 */
+body, html, #root {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--main-bg) !important;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 스크롤바 숨기기 (선택 사항) */
+::-webkit-scrollbar {
+  display: none;
+}

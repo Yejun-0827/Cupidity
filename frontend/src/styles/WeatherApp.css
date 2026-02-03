@@ -1,0 +1,116 @@
+.weather-app {
+    background-color: var(--bg_main); /* WeatherApp 배경색 */
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .top-banner {
+    color: var(--text_light);
+    margin-bottom: 50px;
+  }
+  
+  .heading {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+  }
+  
+  .top-banner form {
+    display: flex;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .top-banner form input {
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid;
+  }
+  
+  .top-banner form input::placeholder {
+    color: currentColor;
+  }
+  
+  .top-banner form button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: var(--red);
+    transition: background 0.3s ease-in-out;
+    letter-spacing: 0.02em;
+  }
+  
+  .top-banner form button:hover {
+    background: var(--darkred);
+  }
+  
+  .top-banner form .msg {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+  }
+  
+  .ajax-section .city {
+    padding: 40px 10%;
+    border-radius: 20px;
+    background: var(--text_light);
+    color: var(--text_med);
+  }
+  
+  .city_name sup {
+    font-size: 0.5em;
+    padding: 0.2em 0.5em;
+    background: var(--orange);
+    color: var(--text_light);
+    border-radius: 9px;
+  }
+  
+  .city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--text_dark);
+  }
+  
+  .city-temp sup {
+    font-size: 0.5em;
+  }
+  
+  .ajax-section figcaption {
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  
+  .cities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px 20px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .cities {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 32px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .top-banner form {
+      flex-direction: columns;
+    }
+    .cities {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .cities {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

@@ -1,0 +1,51 @@
+.board_wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.board_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.board_write_wrap {
+    width: 100%;
+}
+
+.board_write dl dt {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.board_write dl dd {
+    margin-top: 10px;
+}
+
+.board_write dl dd input,
+.board_write dl dd textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.bt_wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bt_wrap a,
+.bt_wrap button {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bt_wrap a.on,
+.bt_wrap button.on {
+    background: #000;
+    color: #fff;
+}
